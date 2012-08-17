@@ -28,13 +28,13 @@ describe "Subject"
     end
   end
 
-  context "it can be empty, it apply subject for default title"
+  context "it can be empty, it apply 'subject' for default title"
     it
       should equal 1
     end
   end
 
-  context "use \$this"
+  context "use $this"
     it "subject == 1"
       $this->subject($W) should equal 1
     end
@@ -51,15 +51,6 @@ describe "Subject"
     end
     it "expect == 10"
       $this->subject($W)->expect should equal 10
-    end
-  end
-  
-  context "use world->testcase into subject"
-    subject
-      return $W->testcase->title;
-    end
-    it "title is this"
-      should equal "title is this"
     end
   end
 end

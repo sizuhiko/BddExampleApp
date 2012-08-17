@@ -7,7 +7,7 @@ describe "PostsController"
   end
   describe "/posts/index"
     subject
-      $vars = $W->testcase->testAction("/posts/index", array('return'=>'vars'));
+      $vars = \DrSlump\Spec::test()->testAction("/posts/index", array('return'=>'vars'));
       return array_map(function($post) { return $post['Post']['title']; }, $vars['posts']);
     end
     it 'have 3 titles'
