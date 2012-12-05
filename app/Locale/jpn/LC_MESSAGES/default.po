@@ -1,0 +1,50 @@
+# LANGUAGE translation of CakePHP Application
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2012-12-04 11:14+0900\n"
+"PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+#: Controller/UsersController.php:14
+msgid "Invalid username or password, try again"
+msgstr "ユーザー名かパスワードが間違っています"
+
+#: View/Posts/add.ctp:4
+msgid "Title"
+msgstr "タイトル"
+
+#: View/Posts/add.ctp:5
+msgid "Body"
+msgstr "本文"
+
+#: View/Posts/add.ctp:6
+#: View/Posts/index.ctp:28
+msgid "Add"
+msgstr "追加"
+
+#: View/Users/login.ctp:5
+msgid "Please enter your username and password"
+msgstr "ユーザ名とパスワードを入力してください"
+
+#: View/Users/login.ctp:11
+msgid "Login"
+msgstr "ログイン"
+
+msgid "Send"
+msgstr "投稿"
+
+msgid "Username"
+msgstr "ユーザ名"
+
+msgid "Password"
+msgstr "パスワード"
+

@@ -12,3 +12,13 @@ CREATE TABLE `posts` (
 INSERT INTO `posts` VALUES(1, 'The title', 'This is the post body.', '2011-06-22 23:06:44', '2011-06-22 23:06:44');
 INSERT INTO `posts` VALUES(2, 'A title once again', 'And the post body follows.', '2011-06-22 23:06:44', '2011-06-22 23:06:44');
 INSERT INTO `posts` VALUES(3, 'Title strikes back', 'This is really exciting! Not.', '2011-06-22 23:06:44', '2011-06-22 23:06:44');
+
+CREATE TABLE users (
+    id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(50),
+    password VARCHAR(50),
+    firstname VARCHAR(50),
+    lastname VARCHAR(50),
+    created DATETIME DEFAULT NULL,
+    modified DATETIME DEFAULT NULL
+);

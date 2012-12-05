@@ -8,6 +8,11 @@
       | タイトル | これは、記事の本文です。 |
       | またタイトル | そこに本文が続きます。 |
       | Title strikes back | こりゃ本当にわくわくする！うそ。 |
+    かつ there is a user:
+      | Username | Password | FirstName | LastName |
+      | alice    | ecila    | Alice     | Smith    |
+      | bob      | obo      | Bob       | Johnson  |
+    かつ 日本語でアクセスする
 
   シナリオ: 記事一覧を閲覧できること
     前提 "トップページ" を表示している
@@ -23,12 +28,14 @@
   シナリオ: 記事を追加できること
     前提 "トップページ" を表示している
     もし "追加" のリンク先へ移動する
+    かつ "bob"、"obo"でログインする
+    かつ I do not follow redirects
     かつ 記事投稿フォームに以下の内容を登録すること:
       | ラベル  | 値                |
       | タイトル | 今日は歓送迎会      |
       | 本文    | 19:30からせかいいち |
     かつ "投稿" ボタンをクリックする
-    もし "トップページ" へ移動する
+    もし I should be redirected to "/posts"
     ならば "今日は歓送迎会" と表示されていること
 
   @javascript

@@ -29,6 +29,20 @@ CREATE TABLE `posts` (
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=4 ;
 
 --
+-- テーブルの構造 `users`
+--
+
+CREATE TABLE users (
+    id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(50),
+    password VARCHAR(50),
+    firstname VARCHAR(50),
+    lastname VARCHAR(50),
+    created DATETIME DEFAULT NULL,
+    modified DATETIME DEFAULT NULL
+);
+
+--
 -- テーブルのデータをダンプしています `posts`
 --
 

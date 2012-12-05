@@ -25,6 +25,6 @@ array('controller' => 'posts', 'action' => 'view', $post['Post']['id'])); ?>
     <?php endforeach; ?>
 
 </table>
-<?php echo $this->Html->link('追加', array('controller'=>'posts', 'action'=>'add')); ?>
+<?php echo $this->Html->link(__('Add'), array('controller'=>'posts', 'action'=>'add')); ?>
 
 <?php $this->Html->script('jquery-1.6.4.min', array('inline'=>false)); ?>
